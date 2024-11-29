@@ -52,7 +52,7 @@ Thêm 1 tham số int c để bài toán trở thành so sánh số lớn nhất
 */
 int max(int a, int b, int c)
 {
-
+    // Phần bài tập: Tìm số lớn nhất giữa 3 số
     return 0;
 }
 
@@ -62,8 +62,8 @@ int main()
     // Ở đây chúng ta có thể dùng các biến khác được, chẳng hạn như m, n
     int m = 4;
     int n = 9;
-    int ketQua = max(m, n); //Tên của tham số có thể đặt tuỳ ý, hoặc có thể truyền thằng số vào mà không cần phải biến
-    sqrt(ketQua); // sqrt(ketQua); : cũng chính là 1 hàm và được định nghĩa trong thư viện <cmath> của C++
+    int ketQua = max(m, n); // Tên của tham số có thể đặt tuỳ ý, hoặc có thể truyền thằng số vào mà không cần phải biến
+    sqrt(ketQua);           // sqrt(ketQua); : cũng chính là 1 hàm và được định nghĩa trong thư viện <cmath> của C++
 
     int x = 15;
     int y = 5;
@@ -72,4 +72,3 @@ int main()
     cout << ketQua << " " << ketQua2;
     return 0;
 }
-

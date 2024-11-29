@@ -18,7 +18,7 @@ Syntax:
 (keyword)
 {
     content of struct (nội dung của struct)
-    Liệt kê các biến thành phần trong kiểu dữ liệu struct này
+    Liệt kê các biến thành phần/thành viên trong kiểu dữ liệu struct này
 };
 
 */
