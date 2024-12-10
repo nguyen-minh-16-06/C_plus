@@ -17,10 +17,11 @@ int main()
 
     if ((h >= 0 && h <= 23) && (m >= 0 && m <= 59) && (s >= 0 && s <= 59))
     {
-        cout << "Ket qua hop le.";
+        cout << "Ket qua: hop le.";
     }
+
     else
     {
-        cout << "Khong hop le.";
+        cout << "Ket qua: Khong hop le.";
     }
 }

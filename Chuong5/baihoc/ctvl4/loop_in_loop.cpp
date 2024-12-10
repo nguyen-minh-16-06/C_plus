@@ -20,6 +20,6 @@ int main()
             cout << "Anh yeu em ngay thu " << j << "\n";
         }
     }
-    
+
     return 0;
 }

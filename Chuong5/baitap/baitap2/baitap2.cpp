@@ -64,7 +64,7 @@ int main()
         cout << "\n";
 
         cout << "S(" << n << ") = ";
-        for (int i = 1; i <= n ; i++)
+        for (int i = 1; i <= n; i++)
         {
             if (i < n)
             {
@@ -84,7 +84,7 @@ int main()
             {
                 cout << i << "/" << i << "^" << i << " + ";
             }
-            else 
+            else
             {
                 cout << i << "/" << i << "^" << i << " ";
             }
@@ -92,12 +92,56 @@ int main()
         cout << "\n";
 
         cout << "U(" << n << ") = ";
+        int icurrent = 1;
         for (int i = 0; i < n; i++)
         {
-            
+            cout << icurrent << " * " << icurrent + 1;
+            if (i < n - 1)
+            {
+                cout << " + ";
+            }
+            icurrent++;
         }
-        
+        cout << "\n";
 
+        cout << "V(" << n << ") = ";
+        int currentNumber = 1;
+        for (int i = 1; i <= n; i++)
+        {
+            cout << currentNumber;
+            if (i < n)
+            {
+                cout << " + ";
+            }
+            currentNumber = currentNumber * 10 + 1;
+        }
+        cout << "\n";
+
+        cout << "X(" << n << ") = ";
+        for (int i = 1; i <= n; i++)
+        {
+            if (i > 1)
+            {
+                cout << " + ";
+            }
+            if (i == 1)
+            {
+                cout << "1";
+            }
+            else
+            {
+                cout << "(";
+                for (int j = 1; j <= i; j++)
+                {
+                    cout << j;
+                    if (j < i)
+                    {
+                        cout << " + ";
+                    }
+                }
+                cout << ")";
+            }
+        }
     }
 
     else

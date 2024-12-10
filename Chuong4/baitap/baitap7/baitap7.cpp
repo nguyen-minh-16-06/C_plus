@@ -19,7 +19,7 @@ int main()
             if ((canh3 * canh3 == (canh1 * canh1 + canh2 * canh2)) ||
                 (canh2 * canh2 == (canh1 * canh1 + canh3 * canh3)) ||
                 (canh1 * canh1 == (canh2 * canh2 + canh3 * canh3)) &&
-                ((canh1 == canh2) || (canh1 == canh3) || (canh2 == canh3)))
+                    ((canh1 == canh2) || (canh1 == canh3) || (canh2 == canh3)))
             {
                 cout << "Ket qua: tam giac vuong can.";
             }
