@@ -19,7 +19,6 @@ int main()
     }
     cout << "\n";
 
-    cout << "Ket qua 2: ";
     int count = 0;
     for (int i = 1; i <= n; i++)
     {
@@ -28,14 +27,7 @@ int main()
             count++;
         }
     }
-    cout << count;
-    cout << "\n";
-
-    if (n < 2)
-    {
-        cout << "Ket qua 3: Khong phai la so nguyen to";
-        return 0;
-    }
+    cout << "Ket qua 2: " << count << "\n";
 
     bool isPrime = true;
 
@@ -52,7 +44,8 @@ int main()
     {
         cout << "Ket qua 3: La so nguyen to";
     }
-    else
+
+    else if (n < 2 || isPrime == false)
     {
         cout << "Ket qua 3: Khong phai la so nguyen to";
     }
