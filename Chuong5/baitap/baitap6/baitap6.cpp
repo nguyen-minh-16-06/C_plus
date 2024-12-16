@@ -18,4 +18,6 @@ int main()
         i++;
     }
     cout << "X nho nhat la: " << i - 1;
+
+    return 0;
 }

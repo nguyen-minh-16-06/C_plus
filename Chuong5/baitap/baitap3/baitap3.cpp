@@ -49,4 +49,6 @@ int main()
     {
         cout << "Ket qua 3: Khong phai la so nguyen to";
     }
+    
+    return 0;
 }

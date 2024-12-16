@@ -28,4 +28,6 @@ int main()
     {
         cout << "Ket qua: khong phai so hoan hao";
     }
+    
+    return 0;
 }
