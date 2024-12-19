@@ -16,7 +16,7 @@ int main()
     /*
     ĐẶC BIỆT: Với mỗi phần tử, nó không chỉ là 1 giá trị đơn mà nó có thể là 1 mảng con bên trong nữa
     (tức là MẢNG TRONG MẢNG) <=> FOR TRONG FOR
-    - Ban đầu ta có 1 mảng bên trong có 5 phần tử và bên trong sẽ là các mảng con => khái niệm này đgl
+    - Ban đầu ta có 1 mảng bên trong có 5 phần tử và bên trong sẽ là các mảng con => khái niệm này được gọi là
     MẢNG ĐA CHIỀU
     - Giống như việc học toán vậy, có khái niệm hệ toạ độ Ox, hệ toạ độ Oxy hay Oxyz (mảng cũng giống như vậy)
     - Từ chiều trong MẢNG ĐA CHIỀU nó giống với chiều không gian trong hình học vậy.
@@ -75,14 +75,13 @@ int main()
         }
         cout << "\n";
     }
-    
-    string strs[5] = {    // - Lập trình C thì có thể viết như sau: char s[5][10]:
-        "Nguyen Minh",  // + Có thể hiểu là ta gồm có 5 chuỗi kí tự và mỗi chuỗi kí tự sẽ có tối đa là 10 chữ (10 ký tự)
-        "Ozawa",        // + Ở đây là 5 chuỗi kí tự (hiểu đơn giản là 1 mảng các kiểu dữ liệu char)
-        "Rei Kamiki",
-        "KONAN KOYOI",
-        "Ai Uehara"
-    };
+
+    string strs[5] = {               // - Lập trình C thì có thể viết như sau: char s[5][10]:
+                      "Nguyen Minh", // + Có thể hiểu là ta gồm có 5 chuỗi kí tự và mỗi chuỗi kí tự sẽ có tối đa là 10 chữ (10 ký tự)
+                      "Ozawa",       // + Ở đây là 5 chuỗi kí tự (hiểu đơn giản là 1 mảng các kiểu dữ liệu char)
+                      "Rei Kamiki",
+                      "KONAN KOYOI",
+                      "Ai Uehara"};
 
     for (int i = 0; i < 5; i++)
     {
@@ -100,8 +99,8 @@ int main()
         /*
         - Sau khi in ra thì các kí tự sẽ được in rời ra như: N g u y e n  M i n h, thực chất nó chỉ là chuỗi kí tự,
         nhưng được in ngắt ra thành từng kí tự riêng. Vậy bản chất ở đây String chỉ đơn giản là mảng 2 chiều mà thôi.
-        - Vậy tại sao chúng ta không dùng "char s[5][10]", có thể hiểu rằng String là 1 kiểu dữ liệu rất là phổ biến 
-        và chúng ta phải xử lý hay làm việc trên kiểu dữ liệu này, thế nên với với cách khai báo char s[5][10] là 
+        - Vậy tại sao chúng ta không dùng "char s[5][10]", có thể hiểu rằng String là 1 kiểu dữ liệu rất là phổ biến
+        và chúng ta phải xử lý hay làm việc trên kiểu dữ liệu này, thế nên với với cách khai báo char s[5][10] là
         cách khai báo 1 string kiểu nguyên thuỷ (không có gì cả). Trong khi nếu chúng ta làm với kiểu "string strs[5]"
         thì có rất nhiều cơ chế, tính/chức năng mở rộng bên trong nó, giúp chúng ta làm việc với string 1 cách nhanh
         hơn

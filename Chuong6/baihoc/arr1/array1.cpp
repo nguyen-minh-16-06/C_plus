@@ -6,8 +6,8 @@ int main()
 {
     // Mảng (ARRAY)
     /*
-    - Mảng hiểu đơn giản là 1 cái biến nhưng thay vì lưu 1 giá trị đơn lẻ, thì mảng lưu
-    1 nhóm các giá trị có cùng kiểu dữ liệu với nhau
+    - Mảng hiểu đơn giản là 1 cái biến nhưng thay vì lưu 1 giá trị đơn lẻ, thì mảng lưu 1 nhóm các giá trị có
+    cùng kiểu dữ liệu với nhau.
     */
 
     // Ví dụ:

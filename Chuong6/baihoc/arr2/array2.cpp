@@ -14,20 +14,20 @@ int main()
     /*
     Bài này cũng để duyệt mảng nhưng vòng lặp for này DÀNH RIÊNG CHO MẢNG (kiểu dữ liệu danh sách)
     với cấu trúc sau:
+    Bài toán: In toàn bộ phần tử của mảng dưới ra, nhưng sử dụng 1 cách viết khác của for dành riêng cho MẢNG.
+    Đây là cấu trúc vòng lặp dành riêng cho các kiểu dữ liệu danh sách.
     */
 
     int arr[6] = {5, 3, 8, 7, 10, 2};
 
     /*
-    - Phạm vi của bài này chỉ áp dụng cho mảng còn trong kiến thức nâng cao thì nó sẽ áp dụng chung
+    - Phạm vi của bài này chỉ áp dụng cho MẢNG, còn trong kiến thức nâng cao thì nó sẽ áp dụng chung
     cho tất cả các cấu trúc dữ liệu (1 nhóm dữ liệu liên kết lại với nhau)
     - Đồng thời MẢNG (MẢNG NGUYÊN THUỶ) cũng là 1 trong những các cấu trúc dữ liệu và thực tế thì nó
     là kiểu cấu trúc dữ liệu đơn giản, dễ nhất và được hỗ trợ sẵn bởi C++, tức là không cần phải add
     bất kì thư viện nào.
     */
-    /*
 
-    */
     // - Cú pháp có 2 phần và được ngăn cách nhau bởi 1 dấu hai chấm ( : )
     // - Thành phần bên trái là 1 biến lặp (đại diện cho các phần tử trong mảng)
     // Ví dụ: Trong mảng là 1 kiểu số nguyên => các phần tử là kiểu int => khai báo kiểu dữ liệu int x
@@ -80,6 +80,7 @@ int main()
         }
     }
 
+    // Kiểm tra mảng sau khi sắp xếp
     for (int y : Array)
     {
         cout << y << " ";
@@ -124,7 +125,7 @@ int main()
     n++;
 
     arrayy[9] = 1;
-    n++; 
+    n++;
 
     for (int i = 0; i < n; i++)
     {
