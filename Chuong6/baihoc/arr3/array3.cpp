@@ -91,7 +91,7 @@ int main()
         Ví dụ: "Nguyen Minh" thì có 12 kí tự với Nguyen 6 kí tự space là 1 kí tự và Minh 4 kí tự
         "Ozawa" thì có 5 kí tự
         */
-        for (int j = 0; j < s[i].length(); j++) // Đây là cách duyệt sâu kí tự
+        for (int j = 0; j < strs[i].length(); j++) // Đây là cách duyệt sâu kí tự
         {
             cout << strs[i][j] << " ";
         }
