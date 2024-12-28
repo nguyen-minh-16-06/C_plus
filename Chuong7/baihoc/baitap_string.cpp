@@ -27,8 +27,6 @@ int main()
             if (fullName[i] == c)
             {
                 int distance = c - 'A';
-                // char replacedChar = 'a' + distance; // Có thể bỏ đi và tóm gọn như bên dưới
-                // fullName[i] = replacedChar;
                 fullName[i] = 'a' + distance;
             }
         }

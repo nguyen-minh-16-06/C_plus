@@ -18,19 +18,18 @@ int main()
 
     char names[10] = {'N', 'g', 'u', 'y', 'e', 'n'};
 
-    /*
-    - Với ngôn ngữ C++ hiện tại bây giờ thì người ta cải tiến, cung cấp cho user 1 kiểu dữ liệu nâng cao
-    đó chính là string. Để chúng ta tiện lợi hơn, không cần phải khai báo mảng ở đằng sau tên biến nữa.
-    Ngoài ra còn có nhiều chức năng khác ở bên trong string nữa.
-    */
 
     /*
+    - Với ngôn ngữ C++ hiện tại bây giờ thì người ta cải tiến, cung cấp cho user 1 kiểu dữ liệu nâng cao
+    đó chính là string. Để tiện lợi hơn, không cần phải khai báo mảng ở đằng sau tên biến nữa.
+    Ngoài ra còn có nhiều chức năng khác ở bên trong string nữa.
     - Có thể coi "name" như là 1 biến có kiểu là xâu (string), còn ở char names... ta coi đó là 1 mảng các kí tự.
     - Với 1 mảng như string name, ta có thể khai báo không cần gán giá trị
     */
 
     // string name; // Lúc này name <=> như 1 mảng/xâu rỗng (tương đương với string name = "";)
-    // name = "Nguyen Minh"; // Và sau khi khai báo xong ta có thể gán lại cho nó sau vẫn được.
+    // name = "Nguyen Minh"; // Và sau khi khai báo xong ta có thể gán lại cho nó sau.
+
 
     /* TÍNH NĂNG 1: NỐI CHUỖI (CỘNG 2 CHUỖI LẠI VỚI NHAU)
     - Có 1 tính năng mở rộng mà chỉ có string mới có, còn kiểu char names[10] thì lại KHÔNG CÓ. Đó chính là khả năng
@@ -41,7 +40,8 @@ int main()
     string fullName = firstName + " " + lastName; // Cộng vào 2 biến 1 kí tự trắng (Vừa được phép cộng giữa 2 biến
     // với nhau, vừa đc phép cộng 1 chuỗi mà ta định nghĩa thêm trong fullName là " ")
 
-    cout << fullName << "\n";
+    cout << "Ho va ten: " << fullName << "\n";
+
 
     /* TÍNH NĂNG 2: CHIỀU DÀI CỦA CHUỖI KÍ TỰ
     - Chẳng hạn ta muốn biết được 1 chuỗi kí tự có bao nhiêu phần tử (bao nhiêu chữ cái trong đó), thông thường với mảng
@@ -54,19 +54,21 @@ int main()
     trong đó.
     */
 
-    cout << fullName.length() << "\n";
+    cout << "Do dai cua chuoi la: " << fullName.length() << "\n";
+
 
     /* TÍNH NĂNG 3: CẮT CHUỖI KÍ TỰ LỚN THÀNH CHUỖI KÍ TỰ NHỎ
     - Ta có thể cắt 1 chuỗi kí tự lớn thành 1 chuỗi kí tự nhỏ, đầu tiên ta đặt 1 chuỗi kí tự nhỏ với tên biến là "name"
     sau đó ta thêm 1 hàm .substr(3, 13); ở đằng sau fullName (Với 3 và 13 là các thông/tham số cần truyền vào):
-        + Với tham số đầu tiên ta nhập là vị trí của kí tự đầu tiên mà ta muốn trích xuất ra, ví dụ với từ Nguyen Minh
+        + Với tham số đầu tiên ta nhập là vị trí của kí tự đầu tiên mà ta muốn trích xuất ra, ví dụ với từ Le Nguyen Minh
     và muốn cắt ra thì ta phải biết được vị trí chữ "N" trong chuỗi lớn là vị trí bao nhiêu "N" là vị trí số 3.
         + Với tham số thứ hai là số kí tự mà ta muốn lấy tính từ vị trí đầu tiên (tức vị trí số 3) là 13 kí tự bắt đầu
     từ kí tự ở vị trí số 3.
     */
 
     string name = fullName.substr(3, 13);
-    cout << name << "\n";
+    cout << "Cat chuoi ki tu: " << name << "\n";
+
 
     /* TÍNH NĂNG 4: KHẢ NĂNG TRUY CẬP CÁC PHẦN TỬ
     - Mặc dù string ở đây được coi là 1 kiểu dữ liệu nâng cao, nhưng bản chất thì nó vẫn được coi là 1 array (mảng) của
@@ -78,7 +80,7 @@ int main()
     name[0] = 'B'; (Nguyen Minh => Bguyen Minh)
     */
 
-    cout << name[0] << "\n";
+    cout << "Truy xuat phan tu trong chuoi ki tu: " << name[0] << "\n";
 
     return 0;
 }
