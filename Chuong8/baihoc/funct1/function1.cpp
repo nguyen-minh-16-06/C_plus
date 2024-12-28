@@ -8,9 +8,11 @@ using namespace std;
 /*
 - Khi gặp 1 công việc có tính chất lặp lại, thì có thể tách công việc đấy ra thành 1 chương trình
 hay đoạn code riêng và người ta gọi đó là function (chức năng, hàm).
+
 - Khi chương trình được chia thành các function thì trông đoạn code gọn, tối ưu và đẹp hơn.
+
 - Hàm trong lập trình cũng tương tự như hàm số trong toán học (y = f(x): y là 1 giá trị nhận kết
-quả từ 1 phép biến đổi f, f ở đây viết tắt là function, x là giá trị đầu vào, khi chúng ta truyền
+quả từ 1 phép biến đổi f (f ở đây viết tắt là function), x là giá trị đầu vào, khi chúng ta truyền
 1 giá trị ban đầu vào, sau 1 phép biến đổi f thì sẽ cho ra kết quả là y)
 */
 
@@ -53,7 +55,21 @@ Thêm 1 tham số int c để bài toán trở thành so sánh số lớn nhất
 int max(int a, int b, int c)
 {
     // Phần bài tập: Tìm số lớn nhất giữa 3 số
-    return 0;
+    int result = 0;
+    if (a > b && a > c)
+    {
+        result = a;
+    }
+    else if (b > a && b > c)
+    {
+        result = b;
+    }
+    else if (c > a && c > b)
+    {
+        result = c;
+    }
+
+    return result;
 }
 
 /* int main(): ở đây bản thân int main() chính là 1 hàm bắt buộc đối với 1 chương trình C++ */
@@ -69,6 +85,10 @@ int main()
     int y = 5;
     int ketQua2 = max(x, y);
 
-    cout << ketQua << " " << ketQua2;
+    cout << ketQua << " " << ketQua2 << "\n";
+
+    int ketQua3 = max(4, 7, 5);
+    cout << ketQua3;
+
     return 0;
 }
