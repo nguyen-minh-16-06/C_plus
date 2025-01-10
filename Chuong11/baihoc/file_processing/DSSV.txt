@@ -1,0 +1,5 @@
+Le Nguyen Minh;20;A
+Vo Duc Hieu;20;B
+Ton That Van Chien;20;B
+Truong Cong Hoang Lam;21;C
+Nguyen Huu Hoang Thanh;21;B
